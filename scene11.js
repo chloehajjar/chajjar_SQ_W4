@@ -1,8 +1,8 @@
 // ============================================================
-// scene8.js: Outcome 1
+// scene11.js: Outcome 4
 // ============================================================
 
-function drawScene8() {
+function drawScene11() {
   push();
   fill(160, 220, 255);
   noStroke();
@@ -10,17 +10,17 @@ function drawScene8() {
   textSize(16);
 
   let storyText =
-    "THE END: Outcome 1\n\n" +
-    "The book is hiding under a giant, singing lily. You tickle the\n" +
-    "pages, and it happily snaps shut, showering you in harmless star-glitter.\n" +
-    "You solved the mystery and became the Assistant Librarian!";
+    "THE END: Outcome 4\n\n" +
+    "The owl accidentally sneezes, blowing the syrup away. The book\n" +
+    "opens up and casts an accidental Levitation Spell, making you float\n" +
+    "safely and giggling back to bed. A silly, floating success!";
   text(storyText, 60, 100, 680, 260);
   pop();
 
   drawStoryButton(width / 2, 410, 200, 50, "Play Again");
 }
 
-function handleScene8Clicks() {
+function handleScene11Clicks() {
   if (isMouseOver(width / 2, 410, 200, 50)) {
     currentScreen = 1;
   }

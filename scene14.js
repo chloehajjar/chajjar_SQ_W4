@@ -1,8 +1,8 @@
 // ============================================================
-// scene8.js: Outcome 1
+// scene14.js: Outcome 7
 // ============================================================
 
-function drawScene8() {
+function drawScene14() {
   push();
   fill(160, 220, 255);
   noStroke();
@@ -10,17 +10,17 @@ function drawScene8() {
   textSize(16);
 
   let storyText =
-    "THE END: Outcome 1\n\n" +
-    "The book is hiding under a giant, singing lily. You tickle the\n" +
-    "pages, and it happily snaps shut, showering you in harmless star-glitter.\n" +
-    "You solved the mystery and became the Assistant Librarian!";
+    "THE END: Outcome 7\n\n" +
+    "The bubble bounces the book gently right back into your arms. The\n" +
+    "spell inside glows brightly, lighting up the whole village square like a\n" +
+    "beautiful firefly festival. Everyone cheers for your quick thinking!";
   text(storyText, 60, 100, 680, 260);
   pop();
 
   drawStoryButton(width / 2, 410, 200, 50, "Play Again");
 }
 
-function handleScene8Clicks() {
+function handleScene14Clicks() {
   if (isMouseOver(width / 2, 410, 200, 50)) {
     currentScreen = 1;
   }

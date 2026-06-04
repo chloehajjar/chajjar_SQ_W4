@@ -1,8 +1,8 @@
 // ============================================================
-// scene8.js: Outcome 1
+// scene10.js: Outcome 3
 // ============================================================
 
-function drawScene8() {
+function drawScene10() {
   push();
   fill(160, 220, 255);
   noStroke();
@@ -10,17 +10,17 @@ function drawScene8() {
   textSize(16);
 
   let storyText =
-    "THE END: Outcome 1\n\n" +
-    "The book is hiding under a giant, singing lily. You tickle the\n" +
-    "pages, and it happily snaps shut, showering you in harmless star-glitter.\n" +
-    "You solved the mystery and became the Assistant Librarian!";
+    "THE END: Outcome 3\n\n" +
+    "Professor Hoot uses his magic spectacles to read the book's mind.\n" +
+    "It turns out the book just wanted to see the moon! You promise to read it\n" +
+    "by the window every night. The book is happy and stays put.";
   text(storyText, 60, 100, 680, 260);
   pop();
 
   drawStoryButton(width / 2, 410, 200, 50, "Play Again");
 }
 
-function handleScene8Clicks() {
+function handleScene10Clicks() {
   if (isMouseOver(width / 2, 410, 200, 50)) {
     currentScreen = 1;
   }

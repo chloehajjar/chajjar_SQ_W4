@@ -1,8 +1,8 @@
 // ============================================================
-// scene8.js: Outcome 1
+// scene9.js: Outcome 2
 // ============================================================
 
-function drawScene8() {
+function drawScene9() {
   push();
   fill(160, 220, 255);
   noStroke();
@@ -10,17 +10,17 @@ function drawScene8() {
   textSize(16);
 
   let storyText =
-    "THE END: Outcome 1\n\n" +
-    "The book is hiding under a giant, singing lily. You tickle the\n" +
-    "pages, and it happily snaps shut, showering you in harmless star-glitter.\n" +
-    "You solved the mystery and became the Assistant Librarian!";
+    "THE END: Outcome 2\n\n" +
+    "A friendly garden gnome is using the glowing book as a nightlight.\n" +
+    "He agrees to give it back if you trade him your glowing wand for a day.\n" +
+    "You made a new friend and saved the spell!";
   text(storyText, 60, 100, 680, 260);
   pop();
 
   drawStoryButton(width / 2, 410, 200, 50, "Play Again");
 }
 
-function handleScene8Clicks() {
+function handleScene9Clicks() {
   if (isMouseOver(width / 2, 410, 200, 50)) {
     currentScreen = 1;
   }
